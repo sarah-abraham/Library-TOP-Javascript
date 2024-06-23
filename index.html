@@ -8,32 +8,47 @@
 </head>
 <body>
     <div class="header">
+        <img src="./assets/book-open-variant.svg" alt="library" class="icon">
         <h1> Library </h1>
     </div>
     <div class="sidebar">
         <div class="sidebar-title">
+            <img src="./assets/book-plus.svg" alt="add-book" class="icon">
             <h2>Book Addition Form</h2>
         </div>
 
         <form action="">
             <div class="book-title book">
-                <label for="title">Book Title: </label>
+                <div class="sidebar-form-icons-labels">
+                    <img src="./assets/format-title.svg" alt="title" class="form-icon">
+                    <label for="title">Book Title: </label>
+                </div>
                 <input type="text" name="title" id="title">
             </div>
             
             <div class="book-author book">
-                <label for="author">Author: </label>
+                <div class="sidebar-form-icons-labels">
+                    <img src="./assets/account.svg" alt="author" class="form-icon">
+                    <label for="author">Author: </label>
+                </div>
                 <input type="text" name="author" id="author">
             </div>
             
 
             <div class="book-pages book">
-                <label for="pages">Number of Pages: </label>
+                <div class="sidebar-form-icons-labels">
+                    <img src="./assets/note-multiple.svg" alt="pages" class="form-icon">
+                    <label for="pages">Number of Pages: </label>
+                </div>
                 <input type="number" name="pages" id="pages">
             </div>
             
             <div class="book-read book">
-                <label for="read">Have you read the book ?</label>
+                <div class="sidebar-form-icons-labels">
+                    <img src="./assets/read.svg" alt="read" class="form-icon">
+                    <label for="read">Have you read the book ?</label>
+                </div>
+                
                 <div class="book-read-radios">
                     <div class="radio-yes">
                         <input type="radio" name="read" id="yes" value="Yes"> 
