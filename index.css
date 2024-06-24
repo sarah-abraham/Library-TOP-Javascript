@@ -10,12 +10,15 @@
 body{
     display: grid;
     grid-template-columns: 1fr 4fr;
+    grid-template-rows: 0.6fr 4fr;
+    overflow: hidden
 }
 
 .header{
     height: max-content;
     padding: 2%;
     grid-column: 2/4;
+    grid-row: 1/2;
     text-align: center;
     font-size: 1.5rem;
     display: flex;
@@ -33,9 +36,8 @@ body{
 
 
 .sidebar{
-    grid-column: 1;
-    grid-row: 1;
-    background-color: #bfdbfe;
+    grid-row: 1/4;
+    
     width: 30vw;
     height: 100vh;
     border-radius: 0px 20px 20px 0px;
@@ -82,4 +84,73 @@ body{
 .book-read-radios{
     display: flex;
     gap: 2vw;
+}
+
+.main{
+    grid-row: 2/4;
+    grid-column: 2/4;
+    padding: 5%;
+    background-color: #cbd5e1;
+    display: grid;
+    grid-template-columns: max-content max-content max-content;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    gap: 3%;
+    height: 83vh;
+}
+
+.card{
+    position: relative;
+    background-color: white;
+    border: 1px solid black;
+    width: 20vw;
+    height: 40vh;
+    border-radius: 10px;
+    text-align: center;
+    padding: 3%;
+}
+
+.card h2{
+    font-size: 1.5em
+}
+
+.card p{
+    font-size: 1em;
+    color: #4b5563
+}
+
+.read-or-not{
+    display: flex;
+    gap: 1vw;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4vh;
+}
+
+.card-icon{
+    width: 1.5vw
+}
+
+
+
+.delete-btn, .add-btn{
+    width: 10vw;
+    padding: 2%;
+    font-size: 1.2rem;
+    border-radius: 10px; 
+    font-weight: 700;   
+}
+
+.add-btn{
+    background-color: #16a34a;
+    border: 2px solid #16a34a;
+}
+
+.delete-btn{
+    position: absolute;
+    bottom: 2vh;
+    right: 4.5vw;
+    margin-top: 10%;
+    background-color: #e11d48;
+    border: 2px solid #e11d48;
 }
